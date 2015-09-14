@@ -31,9 +31,6 @@ $ gulp
  - Validation (for REST layer)
  - Write Tests
 
-----
-
-**Free Software, Hell Yeah!**
 
 [//]: #()
    [git-repo-url]: <https://github.com/smileo/ActivityRez.git>
