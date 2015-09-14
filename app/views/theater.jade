@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div#clip.page-header
+      h1.text-center= title
+    div.theater-canvas  
+      canvas#ar-canvas.theater-canvas
+
+    script.
+      var canvas = this.__canvas = new fabric.StaticCanvas('ar-canvas');
+      canvas.setHeight(800);
+      canvas.setWidth(800);
+      canvas.clear();
+      
+      //prepare rendering
+      canvas.loadFromJSON(!{venue.venue_type.layout}, canvas.renderAll.bind(canvas));
+      

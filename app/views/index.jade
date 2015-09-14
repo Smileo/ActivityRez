@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    div.header
+      h1= title
+      p Welcome to #{title}
+      p
+        a(href='/explorer/?url=http://localhost:3000/api/v1/api-docs.json') Go to API Explorer
+      p
+        a(href='/theater') Go to Theater page
